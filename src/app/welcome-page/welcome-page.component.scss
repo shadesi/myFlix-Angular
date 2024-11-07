@@ -1,0 +1,85 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 32, 136);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  margin-top: 300px;
+  color: #f5eeef;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-container {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.welcome-message {
+  color: white;
+  padding: 20px;
+  font-size: 58px; /* Increased font size */
+  font-weight: bold; /* Made the text bold */
+  margin-top: 100px;
+  animation: rotateIn 2s ease-in-out, popIn 2s ease-in-out; /* Apply the animations */
+}
+
+.action-button {
+  background-color: white;
+  color: red !important; /* Button text color white */
+  margin: 10px;
+  font-size: 18px;
+  animation: buttonFadeIn 1s ease-in-out; /* Apply the button animation */
+}
+
+/* Keyframes for rotate-in animation */
+@keyframes rotateIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Keyframes for pop-in animation */
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for button fade-in animation */
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

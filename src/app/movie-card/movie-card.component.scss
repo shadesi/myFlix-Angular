@@ -1,0 +1,58 @@
+.movie-collection-container {
+  background-color: rgb(14, 66, 176);
+  padding: 100px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white; /* Set the text color to white */
+}
+
+.pop-in {
+  animation: popIn 2s ease-in-out 1; /* Duration set to 2s to allow for two pops */
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 30px 20px;
+  position: relative;
+  top: 20px;
+}
+
+.movie-cards {
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-card-img {
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+}
+
+.movie-card-img:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+/* Keyframes for pop-in animation */
+@keyframes popIn {
+   0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25%, 75% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}

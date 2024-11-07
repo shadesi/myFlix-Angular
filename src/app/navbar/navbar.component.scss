@@ -1,0 +1,37 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-bar {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgb(15, 3, 123); /* Set the background color to light yellow */
+}
+
+.mat-toolbar {
+  background-color: inherit; /* Ensure the toolbar inherits the background color */
+  color: white; /* Set the text color to white */
+}
+
+.nav-title {
+  font-size: 24px; /* Make the text bigger */
+  font-weight: bold; /* Make the text bold */
+  color: white; /* Set the text color to white */
+  animation: moveText 4s ease-in-out 1; /* Apply the animation */
+}
+
+@keyframes moveText {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+}
